@@ -2,11 +2,10 @@ class Project
 
 attr_accessor :title
 
-@@backers = []
 
-def initialize(title)
+def initialize(title, backers)
 @title = title
-save
+@@backers = []
 end
 
 def save
